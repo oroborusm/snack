@@ -45,10 +45,11 @@
         </div>
       </div>
     {else}
-      <a href="{$my_account_url}" title="{l s='Log in to your customer account' d='Shop.Theme.Customeraccount'}" rel="nofollow">
-        <i class="material-icons">&#xE7FD;</i>
+    <div class="user-unlogged">
+      <a class="nombre" href="{$my_account_url}" title="{l s='Log in to your customer account' d='Shop.Theme.Customeraccount'}" rel="nofollow">
         <span class="hidden-sm-down">{l s='Sign in' d='Shop.Theme.Actions'}</span>
       </a>
+    </div>
     {/if}
   </div>
 </div>
