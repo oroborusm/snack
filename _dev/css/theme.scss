@@ -60,12 +60,14 @@ footer{
 }
 header{
   align-items: center;
-  background: #2fac66;
+  //background: #2fac66;
   display: flex;
   justify-content: space-between;
-  padding: 20px 0px 20px 50px;
+  margin: 0 auto;
+  padding: 20px 0px;
   position: relative;
-  width: 100%;
+  //width: 100%;
+  max-width: 1110px;
   z-index: 3;
   .logo{
     text-align: center;
@@ -130,15 +132,18 @@ header{
     display: none;
   }
   ol {
-    padding-left: 0;
+    background: whitesmoke;
+    border-radius: 3px;
+    padding: 5px 15px;
     margin-bottom: 0;
   }
   li {
     display: inline;
     &::after {
       content: "/";
-      color: $gray;
-      margin: 0.3125rem;
+      color: #666;
+      font-size: 11px;
+      margin: 6px;
     }
     &:last-child {
       content: "/";
@@ -149,7 +154,9 @@ header{
       }
     }
     a {
-      color: $gray-darker;
+      color: #666;
+      font-family: "Hevetica", sans-serif;
+      font-size: 14px;
     }
   }
 }
@@ -275,7 +282,7 @@ header{
 .header-nav{
   padding: 10px 0;
   position: relative;
-  z-index: 3;
+  z-index: 4;
 }
 .hero{
   width: 100%;
@@ -303,9 +310,14 @@ header{
 #index{
   header{
     background: transparent;
+    padding: 20px 0 20px 50px;
+    width: 100%;
   }
   .how-to-work{
     display: block;
+  }
+  .info-user{
+    padding: 0 70px;
   }
   .planes {
     display: flex;
@@ -431,6 +443,26 @@ header{
       }
     }
   }
+  .logo-svg-fill{
+    fill: #ffffff;
+  }
+  .user-info{
+    .user-logged{
+      .nombre{
+        span{
+          color: #666666;
+        }
+        .drop-down-icon{
+          fill: #666;
+        }
+      }
+    }
+  }
+  .user-logged{
+    .user-dropdown{
+      box-shadow: 0 2px 20px #000;
+    }
+  }
 }
 #index .hero{
   background: url('http://localhost:8888/tiendi/public/background.jpg') top / cover;
@@ -532,7 +564,7 @@ header{
   box-shadow: none;
   height: 50px;
   //margin-right: 100px;
-  padding: 0 70px;
+  padding: 0;
   position: relative;
   min-width: 200px;
 
@@ -562,6 +594,9 @@ header{
 }
 .logout{
   color: white;
+}
+.logo-svg-fill{
+  fill: #2fac66;
 }
 .margin-small{
   margin-top: 16px;
@@ -685,6 +720,36 @@ header{
   position: absolute;
   top: 10px;
   width: 16px;
+}
+#product{
+  #content{
+    max-width: 100%;
+    width: 100%;
+  }
+}
+.product-quantity{
+  .qty{
+    width: 40%;
+    .input-group{
+      box-shadow: none;
+      width: 100%;
+      #quantity_wanted,
+      .input-group-btn-vertical{
+        display: inline-block !important;
+        vertical-align: top;
+      }
+      #quantity_wanted{
+        max-width: 130px;
+        text-align: right;
+        width: 100%;
+      }
+    }
+  }
+  .qty,
+  .add{
+    display: inline-block;
+    vertical-align: middle;
+  }
 }
 .relative{
   position: relative;
@@ -939,11 +1004,16 @@ header{
   .user-logged{
     .nombre{
       span{
-        color: #666666;
+        //color: white;
+        color: #666;
         font-family:  "Hevetica", sans-serif;
         font-size: 16px;
         line-height: 50px;
         text-transform: uppercase;
+      }
+      .drop-down-icon{
+        //fill: #fff;
+        fill: #666;
       }
     }
   }
@@ -964,7 +1034,7 @@ header{
   }
   .user-dropdown{
     background: #E9E9E9;
-    box-shadow: 0 2px 20px #000;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
     display: block;
     opacity: 0;
     //padding: 10px;

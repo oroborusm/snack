@@ -7,7 +7,7 @@
           <span>
             <svg width="10px" height="6px" viewBox="0 0 10 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <g id="Desktop-HD-Copy" transform="translate(-1275.000000, -79.000000)" fill-rule="nonzero" fill="#666666">
+                    <g class="drop-down-icon" transform="translate(-1275.000000, -79.000000)" fill-rule="nonzero">
                         <g id="downwards-arrow-key" transform="translate(1275.000000, 79.000000)">
                             <polygon id="Shape" points="1.12716638 0 4.83071307 3.66016311 8.53425975 0 9.66142613 1.11398439 4.83071307 5.88803828 0 1.11398439"></polygon>
                         </g>
