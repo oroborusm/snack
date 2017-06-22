@@ -1,27 +1,4 @@
-{**
- * 2007-2017 PrestaShop
- *
- * NOTICE OF LICENSE
- *
- * This source file is subject to the Academic Free License 3.0 (AFL-3.0)
- * that is bundled with this package in the file LICENSE.txt.
- * It is also available through the world-wide-web at this URL:
- * https://opensource.org/licenses/AFL-3.0
- * If you did not receive a copy of the license and are unable to
- * obtain it through the world-wide-web, please send an email
- * to license@prestashop.com so we can send you a copy immediately.
- *
- * DISCLAIMER
- *
- * Do not edit or add to this file if you wish to upgrade PrestaShop to newer
- * versions in the future. If you wish to customize PrestaShop for your
- * needs please refer to http://www.prestashop.com for more information.
- *
- * @author    PrestaShop SA <contact@prestashop.com>
- * @copyright 2007-2017 PrestaShop SA
- * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
- * International Registered Trademark & Property of PrestaShop SA
- *}
+
 <!doctype html>
 <html lang="{$language.iso_code}">
 
@@ -97,19 +74,7 @@
                     <h3 class="titulos-h4">Deshidratados</h3>
                     <p class="paragraph paragraph-small">Ciruelas, Goji, Manzana, Pasas, Cranberries, Duraznos, Datil, Banana, Aloe Vera, Arandanos,Kiwi, Melon, Piña, Tomate.</p>
                   </div>
-                  <div class="col-md-4 margin-small has-scroll-reveal animation fadeInUp ">
-                    <h3 class="titulos-h4">Frutas</h3>
-                    <ul class="list">
-                      <li>Ciruelas</li>
-                      <li>Duraznos</li>
-                      <li>Frutillas</li>
-                      <li>Manzana Fuji</li>
-                      <li>Manzana Verde</li>
-                      <li>Pera</li>
-                      <li>Piña</li>
-                      <li>Uvas</li>
-                    </ul>
-                  </div>
+                  
                 </div>
               </div>
               <div class="steps col-md-4 has-scroll-reveal animation fadeInUp">
@@ -156,7 +121,7 @@
           </section>
 
           <section class="planes row">
-            <div class="col-md-3 animation has-scroll-reveal stepAp">
+            <div class="col-md-3 col-sm-6 animation has-scroll-reveal stepAp">
               <div class="plan">
                 <div class="circle-plan">
                   <div class="plan-quantity">
@@ -171,10 +136,10 @@
                   <li>Porción personal.</li>
                   <li>Shots yogureables.</li>
                 </ul>
-                <h2 class="price">$000000</h2>
+                <h2 class="price">ver más</h2>
               </div>
             </div>
-            <div class="col-md-3 animation has-scroll-reveal stepAp">
+            <div class="col-md-3 col-sm-6 animation has-scroll-reveal stepAp">
               <div class="plan">
                 <div class="circle-plan">
                   <div class="plan-quantity plan-quantity-big">
@@ -189,10 +154,10 @@
                   <li>Para equipos de 5 a 15.</li>
                   <li>Shots yogureables.</li>
                 </ul>
-                <h2 class="price">$000000</h2>
+                <h2 class="price">ver más</h2>
               </div>
             </div>
-            <div class="col-md-3 animation has-scroll-reveal stepAp active">
+            <div class="col-md-3 col-sm-6 animation has-scroll-reveal stepAp active">
               <div class="plan">
                 <div class="circle-plan">
                   <div class="plan-quantity plan-quantity-big">
@@ -207,10 +172,10 @@
                   <li>Para equipos de 20 a 30.</li>
                   <li>Shots yogureables.</li>
                 </ul>
-                <h2 class="price">$000000</h2>
+                <h2 class="price">ver más</h2>
               </div>
             </div>
-            <div class="col-md-3 animation has-scroll-reveal stepAp">
+            <div class="col-md-3 col-sm-6 animation has-scroll-reveal stepAp">
               <div class="plan">
                 <div class="circle-plan">
                   <div class="plan-quantity plan-quantity-big">
@@ -225,7 +190,7 @@
                   <li>Para equipos de 40 a 60.</li>
                   <li>Shots yogureables.</li>
                 </ul>
-                <h2 class="price">$000000</h2>
+                <h2 class="price">ver más</h2>
               </div>
             </div>
             <p class="disclaimer disclaimer-small">Todos los planes son a: 1 mes, 3 meses, 6 meses, 12 meses.</p>

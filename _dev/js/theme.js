@@ -1,27 +1,4 @@
-/**
- * 2007-2017 PrestaShop
- *
- * NOTICE OF LICENSE
- *
- * This source file is subject to the Academic Free License 3.0 (AFL-3.0)
- * that is bundled with this package in the file LICENSE.txt.
- * It is also available through the world-wide-web at this URL:
- * https://opensource.org/licenses/AFL-3.0
- * If you did not receive a copy of the license and are unable to
- * obtain it through the world-wide-web, please send an email
- * to license@prestashop.com so we can send you a copy immediately.
- *
- * DISCLAIMER
- *
- * Do not edit or add to this file if you wish to upgrade PrestaShop to newer
- * versions in the future. If you wish to customize PrestaShop for your
- * needs please refer to http://www.prestashop.com for more information.
- *
- * @author    PrestaShop SA <contact@prestashop.com>
- * @copyright 2007-2017 PrestaShop SA
- * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
- * International Registered Trademark & Property of PrestaShop SA
- */
+
 import 'expose-loader?Tether!tether';
 import 'bootstrap/dist/js/bootstrap.min';
 import 'flexibility';
@@ -45,6 +22,7 @@ import EventEmitter from 'events';
 
 import './lib/bootstrap-filestyle.min';
 import './lib/jquery.scrollbox.min';
+import './lib/classie';
 
 import './components/block-cart';
 import Search from './components/search';
@@ -54,7 +32,7 @@ for (var i in EventEmitter.prototype) {
   prestashop[i] = EventEmitter.prototype[i];
 }
 
-$(document).ready(() => {
+$(document).on("ready", () => {
   let dropDownEl = $('.js-dropdown');
   const form = new Form();
   let topMenuEl = $('.js-top-menu ul[data-depth="0"]');
@@ -114,7 +92,13 @@ $(document).ready(() => {
   });
 
   $('.steps').css('top', stepDistance)
-  var stepDistance = -240
+
+  if (window.innerWidth <= 425) {
+    console.log('pequeño')
+    var stepDistance = -340
+  }else{
+    var stepDistance = -240
+  }
 
 
   function stepAnimated(){
@@ -126,7 +110,6 @@ $(document).ready(() => {
   }
   stepAnimated()
 
-  new UISearch( document.getElementById( 'search_widget' ) );
 
   var boton = $(".stepAp");
   var i=0;
@@ -144,5 +127,21 @@ $(document).ready(() => {
       //$(boton).removeClass('triggerActivo')
       $(this).addClass('active')
     })
+  });
+
+  $('#user_setting').on('click', function() {
+    $('.user-logged').addClass('user_setting_active');
+  });
+
+  $('.user__close').on('click', function() {
+    $('.user-logged').removeClass('user_setting_active');
+  });
+
+
+  $('.cart__button').on("click", function(){
+    $('.cart').addClass('cart--active');
+  });
+  $('.cart__cancel').on("click", function(){
+    $('.cart').removeClass('cart--active');
   });
 });

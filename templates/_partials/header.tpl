@@ -30,25 +30,18 @@
 {/block}
 
 {block name='header_nav'}
-  <nav class="header-nav">
+  <nav class="header-nav hidden-md-up">
     <div class="container">
-        <div class="row">
-          <div class="hidden-sm-down">
-            <!-- <div class="col-md-6 col-xs-12">
-              {hook h='displayNav1'}
-            </div>
-            <div class="col-md-6 right-nav">
-                {hook h='displayNav2'}
-            </div>
-          </div> -->
+        <div class="row row-mobile">
           <div class="hidden-md-up text-sm-center mobile">
-            <div class="float-xs-left" id="menu-icon">
+            <!-- <div class="float-xs-left" id="menu-icon">
               <i class="material-icons d-inline">&#xE5D2;</i>
-            </div>
-            <div class="float-xs-right" id="_mobile_cart"></div>
-            <div class="float-xs-right" id="_mobile_user_info"></div>
+            </div> -->
             <div class="top-logo" id="_mobile_logo"></div>
-            <div class="clearfix"></div>
+            <div class="menu-mobile">
+              <div class="menu-mobile-section" id="_mobile_user_info"></div>
+              <div class="menu-mobile-section cart" id="_mobile_cart"></div>
+            </div>
           </div>
         </div>
     </div>
@@ -96,11 +89,12 @@
         </svg>
       </a>
     </div>
-    <div class="col-md-8 col-sm-12">
-      <div class="row align-items-center">
-        {hook h='displayTop'}
-        <div class="right-nav">
-            {hook h='displayNav2'}
+    <!-- menu -->
+    <div class="col-md-8 col-sm-12 hidden-sm-down">
+      <div class="row align-items-center justify-end">
+        <div class="right-nav info-user">
+          {hook h='displayTop'}
+          {hook h='displayNav2'}
         </div>
       </div>
     </div>
