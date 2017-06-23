@@ -36,7 +36,14 @@
           <section class="speak-int">
             <div class="row">
               <div class="col-sm-8">
-                <h2 class="speak-text has-scroll-reveal animation fadeInUp">Alimentación saludable, al alcance de <span class="speak-relative">tu equipo. <span class="speak-todos"><img src="http://assets.snackon.cl/todos.png" alt=""></span></span></h2>
+                <h2 class="speak-text has-scroll-reveal animation fadeInUp">
+                  Alimentación saludable, al alcance de
+                  <span class="speak-relative">tu equipo.
+                    <span class="speak-todos">
+                      <img src="http://assets.snackon.cl/todos.png" alt="snackon todos">
+                    </span>
+                  </span>
+                </h2>
               </div>
             </div>
           </section>
