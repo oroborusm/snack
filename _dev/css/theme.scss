@@ -484,11 +484,12 @@ header{
   }
 }
 #index .hero{
-  background: url('http://localhost:8888/tiendi/public/background.jpg') top / cover;
+  background: url('http://assets.snackon.cl/background.jpg') top / cover;
   height: 760px;
   max-height: 800px;
   position: relative;
   width: 100%;
+  
   .big-a{
     display: block;
     left: calc(50% - 800px);
