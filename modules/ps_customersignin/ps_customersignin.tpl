@@ -47,7 +47,7 @@
     {else}
     <div class="user-unlogged">
       <a class="nombre" href="{$my_account_url}" title="{l s='Log in to your customer account' d='Shop.Theme.Customeraccount'}" rel="nofollow">
-        <span class="hidden-sm-down">{l s='Sign in' d='Shop.Theme.Actions'}</span>
+        <span>{l s='Sign in' d='Shop.Theme.Actions'}</span>
       </a>
     </div>
     {/if}

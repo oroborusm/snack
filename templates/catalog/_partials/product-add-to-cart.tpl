@@ -27,7 +27,7 @@
     <span class="control-label">{l s='Quantity' d='Shop.Theme.Catalog'}</span>
 
     {block name='product_quantity'}
-      <div class="product-quantity clearfix">
+      <div class="product-quantity space-between">
         <div class="qty">
           <input
             type="text"
@@ -49,7 +49,6 @@
               disabled
             {/if}
           >
-            <i class="material-icons shopping-cart">&#xE547;</i>
             {l s='Add to cart' d='Shop.Theme.Actions'}
           </button>
         </div>
@@ -70,7 +69,7 @@
         {/if}
       </span>
     {/block}
-    
+
     {block name='product_minimal_quantity'}
       <p class="product-minimal-quantity">
         {if $product.minimal_quantity > 1}
