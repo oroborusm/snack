@@ -191,9 +191,9 @@ header{
       a{
         //line-height: 50px;
         .cart-products-count{
-          background: #666;
+          background: #f5a623;
           border-radius: 50%;
-          color: white;
+          color: #666;
           font-size: 16px;
           height: 28px;
           line-height: 28px;
@@ -320,7 +320,7 @@ h1{
   z-index: 4;
 }
 .hero{
-  background: #f5a623;
+  //background: #f5a623;
   margin-bottom: 32px;
   width: 100%;
   .big-a{
@@ -684,7 +684,7 @@ h1{
   color: white;
 }
 .logo-svg-fill{
-  fill: #ffffff;
+  fill: #666;
 }
 .margin-small{
   margin-top: 16px;
