@@ -183,7 +183,7 @@ header{
     }
     .cart-int{
       background: white;
-      border: 2px solid #666;
+      border: 2px solid #f5a623;
       border-radius: 50%;
       height: 40px;
       position: relative;
@@ -920,6 +920,55 @@ h1{
     }
   }
 }
+.qty{
+  width: 40%;
+  .input-group{
+    box-shadow: none;
+    width: 100%;
+    .input-group-btn-vertical{
+      width: 40px;
+      button{
+        background: #666;
+        border: 0;
+        position: relative;
+        text-align: center;
+        i{
+          left: inherit;
+          position: inherit;
+          top: inherit;
+        }
+        .touchspin-down,
+        .touchspin-up{
+          margin-top: -9px;
+        }
+      }
+      .material-icons{
+        color: white;
+      }
+    }
+    .js-cart-line-product-quantity{
+      height: 42px;
+    }
+    #quantity_wanted{
+      height: 42px;
+    }
+    #quantity_wanted,
+    .input-group-btn-vertical,
+    .js-cart-line-product-quantity{
+      display: inline-block !important;
+      vertical-align: top;
+      button{
+        height: 22px;
+      }
+    }
+    #quantity_wanted,
+    .js-cart-line-product-quantity{
+      //max-width: 130px;
+      text-align: right;
+      width: calc(100% - 40px);
+    }
+  }
+}
 .relative{
   position: relative;
 }
@@ -935,11 +984,20 @@ h1{
         display: flex;
         height: 100px;
         justify-content: space-between;
-        .product-line-img,
-        .product-line-desc,
-        .product-line-price{
-          display: inline-block;
-          vertical-align: middle;
+        position: relative;
+        .product-line-grid-body{
+          .current-price{
+            .price{
+              color: #f5a623;
+              font-size: 35px;
+            }
+          }
+          .label{
+            color: #666;
+            font-family: 'Hevetica' ,sans-serif;
+            font-size: 16px;
+            text-transform: uppercase;
+          }
         }
         .product-line-img{
           height: 100%;
@@ -951,6 +1009,16 @@ h1{
               width: 90px;
             }
           }
+        }
+        .product-line-grid-right{
+          .qty{
+            width: 100%;
+          }
+        }
+        .text-xsright{
+          position: absolute;
+          right: 5px;
+          top: 5px;
         }
       }
     }

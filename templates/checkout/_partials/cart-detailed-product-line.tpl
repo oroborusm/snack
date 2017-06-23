@@ -61,12 +61,12 @@
 
     <br/>
 
-    {foreach from=$product.attributes key="attribute" item="value"}
+    <!-- {foreach from=$product.attributes key="attribute" item="value"}
       <div class="product-line-info">
         <span class="label">{$attribute}:</span>
         <span class="value">{$value}</span>
       </div>
-    {/foreach}
+    {/foreach} -->
 
     {if $product.customizations|count}
       <br>
@@ -116,7 +116,7 @@
       <div class="col-xs-4 hidden-md-up"></div>
       <div class="col-md-10 col-xs-6">
         <div class="row">
-          <div class="col-md-6 col-xs-6 qty">
+          <div class="col-md-6 col-xs-12 qty">
             {if isset($product.is_gift) && $product.is_gift}
               <span class="gift-quantity">{$product.quantity}</span>
             {else}
@@ -146,28 +146,38 @@
           </div>
         </div>
       </div>
-      <div class="col-md-2 col-xs-2 text-xsright">
-        <div class="cart-line-product-actions">
-          <a
-              class                       = "remove-from-cart"
-              rel                         = "nofollow"
-              href                        = "{$product.remove_from_cart_url}"
-              data-link-action            = "delete-from-cart"
-              data-id-product             = "{$product.id_product|escape:'javascript'}"
-              data-id-product-attribute   = "{$product.id_product_attribute|escape:'javascript'}"
-              data-id-customization   	  = "{$product.id_customization|escape:'javascript'}"
-          >
-            {if !isset($product.is_gift) || !$product.is_gift}
-            <i class="material-icons float-xs-left">delete</i>
-            {/if}
-          </a>
-
-          {block name='hook_cart_extra_product_actions'}
-            {hook h='displayCartExtraProductActions' product=$product}
-          {/block}
-
-        </div>
+    </div>
+  </div>
+  <div class="text-xsright">
+    <div class="cart-line-product-actions">
+      <a
+      class                       = "remove-from-cart"
+      rel                         = "nofollow"
+      href                        = "{$product.remove_from_cart_url}"
+      data-link-action            = "delete-from-cart"
+      data-id-product             = "{$product.id_product|escape:'javascript'}"
+      data-id-product-attribute   = "{$product.id_product_attribute|escape:'javascript'}"
+      data-id-customization   	  = "{$product.id_customization|escape:'javascript'}"
+      >
+      {if !isset($product.is_gift) || !$product.is_gift}
+      <div class="close">
+        <svg width="13px" height="13px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g transform="translate(-1243.000000, -203.000000)" fill-rule="nonzero" fill="#666">
+              <g id="close-button" transform="translate(1243.000000, 203.000000)">
+                <polygon id="Shape" points="24 2.4 21.6 0 12 9.6 2.4 0 0 2.4 9.6 12 0 21.6 2.4 24 12 14.4 21.6 24 24 21.6 14.4 12"></polygon>
+              </g>
+            </g>
+          </g>
+        </svg>
       </div>
+      {/if}
+    </a>
+
+    {block name='hook_cart_extra_product_actions'}
+    {hook h='displayCartExtraProductActions' product=$product}
+    {/block}
+
     </div>
   </div>
 </div>
