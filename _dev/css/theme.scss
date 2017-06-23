@@ -183,7 +183,7 @@ header{
     }
     .cart-int{
       background: white;
-      border: 2px solid #F5A623;
+      border: 2px solid #666;
       border-radius: 50%;
       height: 40px;
       position: relative;
@@ -191,9 +191,9 @@ header{
       a{
         //line-height: 50px;
         .cart-products-count{
-          background: #f5a623;
+          background: #666;
           border-radius: 50%;
-          color: #3C3B3B;
+          color: white;
           font-size: 16px;
           height: 28px;
           line-height: 28px;
@@ -209,9 +209,9 @@ header{
         }
       }
       .cart-products-count{
-        background: #f5a623;
+        background: #666;
         border-radius: 50%;
-        color: #3C3B3B;
+        color: white;
         font-size: 16px;
         height: 28px;
         line-height: 28px;
@@ -320,6 +320,8 @@ h1{
   z-index: 4;
 }
 .hero{
+  background: #f5a623;
+  margin-bottom: 32px;
   width: 100%;
   .big-a{
     display: none;
@@ -348,6 +350,19 @@ h1{
     padding: 20px 0 20px 50px;
     max-width: 100%;
     width: 100%;
+  }
+  .cart{
+    .blockcart{
+      .cart-int{
+        border: 2px solid #f5a623;
+        a{
+          .cart-products-count{
+            background: #f5a623;
+            color: #666;
+          }
+        }
+      }
+    }
   }
   .how-to-work{
     display: block;
@@ -529,6 +544,7 @@ h1{
 }
 #index .hero{
   background: url('http://assets.snackon.cl/background.jpg') top / cover;
+  background-color: white;
   height: 760px;
   max-height: 800px;
   position: relative;
@@ -668,7 +684,7 @@ h1{
   color: white;
 }
 .logo-svg-fill{
-  fill: #2fac66;
+  fill: #ffffff;
 }
 .margin-small{
   margin-top: 16px;
@@ -907,7 +923,39 @@ h1{
 .relative{
   position: relative;
 }
-
+.row-compra{
+  .cart-items{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    .cart-item{
+      .product-line-grid{
+        align-items: center;
+        border: 1px dotted;
+        display: flex;
+        height: 100px;
+        justify-content: space-between;
+        .product-line-img,
+        .product-line-desc,
+        .product-line-price{
+          display: inline-block;
+          vertical-align: middle;
+        }
+        .product-line-img{
+          height: 100%;
+          padding: 5px;
+          .product-image{
+            display: block;
+            height: 100%;
+            img{
+              width: 90px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 .sb-search {
   //margin-top: 10px;
   height: 67px;
