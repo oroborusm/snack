@@ -28,16 +28,15 @@
 
   <section id="main">
     <div class="cart-grid row">
+      <div class="col-md-12 margin-bottom">
+        <h2 class="titulos-h2 pointer-left relative text-decoration">{l s='Shopping Cart' d='Shop.Theme.Checkout'}</h2>
+      </div>
 
       <!-- Left Block: cart product informations & shpping -->
       <div class="cart-grid-body col-xs-12 col-lg-8">
 
         <!-- cart products detailed -->
-        <div class="card cart-container">
-          <div class="card-block">
-            <h1 class="h1">{l s='Shopping Cart' d='Shop.Theme.Checkout'}</h1>
-          </div>
-          <hr class="separator">
+        <div class="cart-container">
           {block name='cart_overview'}
             {include file='checkout/_partials/cart-detailed.tpl' cart=$cart}
           {/block}
@@ -59,7 +58,7 @@
       <div class="cart-grid-right col-xs-12 col-lg-4">
 
         {block name='cart_summary'}
-          <div class="card cart-summary">
+          <div class="cart-summary">
 
             {block name='hook_shopping_cart'}
               {hook h='displayShoppingCart'}

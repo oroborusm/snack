@@ -1,27 +1,3 @@
-{**
- * 2007-2017 PrestaShop
- *
- * NOTICE OF LICENSE
- *
- * This source file is subject to the Academic Free License 3.0 (AFL-3.0)
- * that is bundled with this package in the file LICENSE.txt.
- * It is also available through the world-wide-web at this URL:
- * https://opensource.org/licenses/AFL-3.0
- * If you did not receive a copy of the license and are unable to
- * obtain it through the world-wide-web, please send an email
- * to license@prestashop.com so we can send you a copy immediately.
- *
- * DISCLAIMER
- *
- * Do not edit or add to this file if you wish to upgrade PrestaShop to newer
- * versions in the future. If you wish to customize PrestaShop for your
- * needs please refer to http://www.prestashop.com for more information.
- *
- * @author    PrestaShop SA <contact@prestashop.com>
- * @copyright 2007-2017 PrestaShop SA
- * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
- * International Registered Trademark & Property of PrestaShop SA
- *}
 <div class="product-line-grid">
   <!--  product left content: image-->
   <div class="product-line-grid-left product-line-img">
@@ -33,7 +9,7 @@
   <!--  product left body: description -->
   <div class="product-line-grid-body col-md-4 col-xs-8 product-line-desc">
     <div class="product-line-info">
-      <a class="label" href="{$product.url}" data-id_customization="{$product.id_customization|intval}">{$product.name}</a>
+      <a class="label product-name-cart" href="{$product.url}" data-id_customization="{$product.id_customization|intval}">{$product.name}</a>
     </div>
 
     <div class="product-line-info product-price h5 {if $product.has_discount}has-discount{/if}">
@@ -111,43 +87,42 @@
   </div>
 
   <!--  product left body: description -->
-  <div class="product-line-grid-right product-line-actions col-md-5 col-xs-12 product-line-price">
-    <div class="row">
-      <div class="col-xs-4 hidden-md-up"></div>
-      <div class="col-md-10 col-xs-6">
-        <div class="row">
-          <div class="col-md-6 col-xs-12 qty">
+  <div class="product-line-price">
+    <div class="col-xs-4 hidden-md-up"></div>
+    <div class="col-md-12 product-line-price-int">
+      <div class="qty">
+        {if isset($product.is_gift) && $product.is_gift}
+          <span class="gift-quantity">{$product.quantity}</span>
+        {else}
+          <input
+            class="js-cart-line-product-quantity"
+            data-down-url="{$product.down_quantity_url}"
+            data-up-url="{$product.up_quantity_url}"
+            data-update-url="{$product.update_quantity_url}"
+            data-product-id="{$product.id_product}"
+            type="text"
+            value="{$product.quantity}"
+            name="product-quantity-spin"
+            min="{$product.minimal_quantity}"
+          />
+        {/if}
+      </div>
+      <div class="col-md-6 col-xs-2 price">
+        <span class="product-price">
+          <strong>
             {if isset($product.is_gift) && $product.is_gift}
-              <span class="gift-quantity">{$product.quantity}</span>
+              <span class="gift">{l s='Gift' d='Shop.Theme.Checkout'}</span>
             {else}
-              <input
-                class="js-cart-line-product-quantity"
-                data-down-url="{$product.down_quantity_url}"
-                data-up-url="{$product.up_quantity_url}"
-                data-update-url="{$product.update_quantity_url}"
-                data-product-id="{$product.id_product}"
-                type="text"
-                value="{$product.quantity}"
-                name="product-quantity-spin"
-                min="{$product.minimal_quantity}"
-              />
+              <span>Total</span> {$product.total}
             {/if}
-          </div>
-          <div class="col-md-6 col-xs-2 price">
-            <span class="product-price">
-              <strong>
-                {if isset($product.is_gift) && $product.is_gift}
-                  <span class="gift">{l s='Gift' d='Shop.Theme.Checkout'}</span>
-                {else}
-                  {$product.total}
-                {/if}
-              </strong>
-            </span>
-          </div>
-        </div>
+          </strong>
+        </span>
       </div>
     </div>
   </div>
+
+
+
   <div class="text-xsright">
     <div class="cart-line-product-actions">
       <a
@@ -161,7 +136,7 @@
       >
       {if !isset($product.is_gift) || !$product.is_gift}
       <div class="close">
-        <svg width="13px" height="13px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <svg width="11px" height="11px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
           <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g transform="translate(-1243.000000, -203.000000)" fill-rule="nonzero" fill="#666">
               <g id="close-button" transform="translate(1243.000000, 203.000000)">
