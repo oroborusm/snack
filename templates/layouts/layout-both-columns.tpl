@@ -142,7 +142,7 @@
                 <ul>
                   <li>Porción personal.</li>
                 </ul>
-                <h2 class="price"><a href="#">Ver más</a></h2>
+                <h2 class="price"><a href="http://www.snackon.cl/8-snack-personal">Ver más</a></h2>
               </div>
             </div>
             <div class="col-md-3 col-sm-6 animation has-scroll-reveal stepAp">
