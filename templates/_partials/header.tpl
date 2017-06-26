@@ -94,7 +94,7 @@
     <div class="col-md-8 col-sm-12 hidden-sm-down">
       <div class="row align-items-center justify-end">
         <div class="right-nav info-user">
-          {hook h='displayTop'}
+          <!-- {hook h='displayTop'} -->
           {hook h='displayNav2'}
         </div>
       </div>
