@@ -220,7 +220,7 @@
                 <ul>
                   <li>Sorprende a tus clientes o colaboradores con snacks saludables!</li>
                 </ul>
-                <h2 class="price"><a href="#">Ver más</a></h2>
+                <h2 class="price"><a href="http://www.snackon.cl/contactenos">Ver más</a></h2>
             </div>
           </section>
           {block name='breadcrumb'}
