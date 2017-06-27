@@ -160,7 +160,7 @@
                   <li>Para familias de 5 a 9 personas.</li>
 
                 </ul>
-                <h2 class="price"><a href="#">Ver más</a></h2>
+                <h2 class="price"><a href="http://www.snackon.cl/9-snack-familiar">Ver más</a></h2>
               </div>
             </div>
             <div class="col-md-3 col-sm-6 animation has-scroll-reveal stepAp active">
@@ -178,7 +178,7 @@
                   <li>Para equipos de 10 a 20.</li>
 
                 </ul>
-                <h2 class="price"><a href="#">Ver más</a></h2>
+                <h2 class="price"><a href="http://www.snackon.cl/10-snack-team">Ver más</a></h2>
               </div>
             </div>
             <div class="col-md-3 col-sm-6 animation has-scroll-reveal stepAp">
@@ -196,7 +196,7 @@
                   <li>Para equipos de 30 a 50.</li>
 
                 </ul>
-                <h2 class="price"><a href="#">Ver más</a></h2>
+                <h2 class="price"><a href="http://www.snackon.cl/12-snack-enterprise">Ver más</a></h2>
               </div>
             </div>
             <p class="disclaimer disclaimer-small">Todos los planes son a: 1 mes, 3 meses, 6 meses, 12 meses.</p>
