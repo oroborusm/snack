@@ -75,11 +75,11 @@
                   <h3 class="col-md-12 titulos-h3 uppercase">Todos nuestros planes incluyen</h3>
                   <div class="col-md-4 margin-small has-scroll-reveal animation fadeInUp ">
                     <h3 class="titulos-h4">Frutos secos</h3>
-                    <p class="paragraph paragraph-small">Castañas de cajú, Maní sin sal, Masas <span class="mini-text-italic">(de todas sus variedades)</span>, Nueces, Almendras, Pistachos, Avena, Chia, Llinaza, Avellana europea, Cardamomo.</p>
+                    <p class="paragraph paragraph-small"> Maní sin sal, Nueces, Almendras, Avena, Chia, Linaza, Semillas de Calabaza, Maravillas <span class="mini-text-italic">(Semillas de Girasol)</span>.</p>
                   </div>
                   <div class="col-md-4 margin-small has-scroll-reveal animation fadeInUp ">
                     <h3 class="titulos-h4">Deshidratados</h3>
-                    <p class="paragraph paragraph-small">Ciruelas, Goji, Manzana, Pasas, Cranberries, Duraznos, Datil, Banana, Aloe Vera, Arandanos,Kiwi, Melon, Piña, Tomate.</p>
+                    <p class="paragraph paragraph-small"> Goji Berries, Anillos de Manzana, Pasas <span class="mini-text-italic">(de todas sus variedades)</span>, Banana, Arándanos, Piña en Rodajas.</p>
                   </div>
 
                 </div>
