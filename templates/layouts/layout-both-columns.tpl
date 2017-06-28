@@ -69,7 +69,7 @@
               <div class="col-md-9 row">
                 <div class="col-md-12">
                   <h2 class="titulos-h2 pointer-left relative">COMO FUNCIONA</h2>
-                  <p class="paragraph">Escoge tu plan </p>
+                  <!--<p class="paragraph">Escoge tu plan </p>-->
                 </div>
                 <div class="col-md-12 row">
                   <h3 class="col-md-12 titulos-h3 uppercase">Todos nuestros planes incluyen</h3>
