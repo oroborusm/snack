@@ -496,7 +496,14 @@ header{
   display: inline-block;
   vertical-align: middle;
 }
-
+.discount-percentage{
+  background: #f5a623;
+  color: white;
+  display: block;
+  font-size: 13px;
+  margin: 10px 0;
+  text-align: center;
+}
 .exito{
   position: relative;
   z-index: 1;
