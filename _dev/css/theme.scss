@@ -497,12 +497,12 @@ header{
   vertical-align: middle;
 }
 .discount-percentage{
-  background: #f5a623;
-  color: white;
-  display: block;
-  font-size: 13px;
-  margin: 10px 0;
-  text-align: center;
+  background: #f5a623 !important;
+  color: white !important;
+  display: block !important;
+  font-size: 13px !important;
+  margin: 10px 0 !important;
+  text-align: center !important;
 }
 .exito{
   position: relative;
@@ -1142,6 +1142,9 @@ h1{
     display: inline-block;
     vertical-align: middle;
   }
+}
+.product-flags{
+  display: none;
 }
 .product-variants-item{
   ul{
