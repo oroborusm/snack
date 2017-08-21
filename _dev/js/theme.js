@@ -66,9 +66,9 @@ $(document).on("ready", () => {
     var wScroll = $(this).scrollTop();
     var pixels= (wScroll/4)
 
-    if (wScroll <= winHeight){
-      $('.steps').css("top", stepDistance - pixels + "px")
-    }
+    // if (wScroll <= winHeight){
+    //   $('.steps').css("top", stepDistance - pixels + "px")
+    // }
     //console.log(wScroll)
     stepAnimated()
   });
@@ -91,14 +91,14 @@ $(document).on("ready", () => {
     }, 500);
   });
 
-  $('.steps').css('top', stepDistance)
+  //$('.steps').css('top', stepDistance)
 
-  if (window.innerWidth <= 425) {
-    console.log('pequeño')
-    var stepDistance = -340
-  }else{
-    var stepDistance = -240
-  }
+  // if (window.innerWidth <= 425) {
+  //   console.log('pequeño')
+  //   var stepDistance = -340
+  // }else{
+  //   var stepDistance = -240
+  // }
 
 
   function stepAnimated(){
