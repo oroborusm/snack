@@ -158,7 +158,7 @@
                   <div class="cat-filter"></div>
                   <div class="cat-int">
                     <h3 class="titulos-h4">Deshidratados</h3>
-                    <p class="paragraph paragraph-small">Goji Berries, Anillos de Manzana, Pasas, Banana, Arándanos, Piña en Rodajas.</p>
+                    <p class="paragraph paragraph-small">Goji Berries, Anillos de Manzana, Banana, Arándanos, Piña en Rodajas.</p>
                   </div>
                 </div>
               </div>
