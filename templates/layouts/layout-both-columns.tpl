@@ -271,31 +271,31 @@
           <li class="gal-img">
             <img src="http://localhost:8888/snackon/img/export/prod/01.jpg" alt="">
             <div class="filter mora">
-              <p>Almendra</p>
+              <p>Arándano</p>
             </div>
           </li>
           <li class="gal-img">
             <img src="http://localhost:8888/snackon/img/export/prod/02.jpg" alt="">
             <div class="filter amarillo">
-              <p>Arándano</p>
+              <p>Almendra</p>
             </div>
           </li>
           <li class="gal-img">
             <img src="http://localhost:8888/snackon/img/export/prod/03.jpg" alt="">
             <div class="filter verde">
-              <p>Avena Instantánea</p>
+              <p>Linaza</p>
             </div>
           </li>
           <li class="gal-img">
             <img src="http://localhost:8888/snackon/img/export/prod/04.jpg" alt="">
             <div class="filter mora">
-              <p>Anillo Manzana</p>
+              <p>Banana Dulce</p>
             </div>
           </li>
           <li class="gal-img">
             <img src="http://localhost:8888/snackon/img/export/prod/05.jpg" alt="">
             <div class="filter verde">
-              <p>Banana Dulce</p>
+              <p>Semilla de Chia</p>
             </div>
           </li>
           <li class="gal-img">
@@ -307,49 +307,49 @@
           <li class="gal-img">
             <img src="http://localhost:8888/snackon/img/export/prod/07.jpg" alt="">
             <div class="filter amarillo">
-              <p>Semilla de Chia</p>
+              <p>Maní</p>
             </div>
           </li>
           <li class="gal-img">
             <img src="http://localhost:8888/snackon/img/export/prod/08.jpg" alt="">
             <div class="filter mora">
-              <p>Goji Berries</p>
+              <p>Piñas Rodajas</p>
             </div>
           </li>
           <li class="gal-img">
             <img src="http://localhost:8888/snackon/img/export/prod/09.jpg" alt="">
             <div class="filter mora">
-              <p>Linaza</p>
+              <p>Goji Berries</p>
             </div>
           </li>
           <li class="gal-img">
             <img src="http://localhost:8888/snackon/img/export/prod/10.jpg" alt="">
             <div class="filter amarillo">
-              <p>Mani</p>
+              <p>Semillas de calabaza</p>
             </div>
           </li>
           <li class="gal-img">
             <img src="http://localhost:8888/snackon/img/export/prod/11.jpg" alt="">
             <div class="filter verde">
-              <p>Semillas de Girasol</p>
+              <p>Avena Instantánea</p>
             </div>
           </li>
           <li class="gal-img">
             <img src="http://localhost:8888/snackon/img/export/prod/12.jpg" alt="">
             <div class="filter mora">
-              <p>Nuez Mariposa</p>
+              <p>Anillo Manzana</p>
             </div>
           </li>
           <li class="gal-img">
             <img src="http://localhost:8888/snackon/img/export/prod/13.jpg" alt="">
             <div class="filter amarillo">
-              <p>Semillas de calabaza</p>
+              <p>Semillas de Girasol</p>
             </div>
           </li>
           <li class="gal-img">
             <img src="http://localhost:8888/snackon/img/export/prod/14.jpg" alt="">
             <div class="filter amarillo">
-              <p>Piñas Rodajas</p>
+              <p>Nuez Mariposa</p>
             </div>
           </li>
           <li class="clearfix"></li>
