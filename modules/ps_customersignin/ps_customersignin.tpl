@@ -33,7 +33,7 @@
               <svg width="13px" height="13px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <defs></defs>
                 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <g transform="translate(-1243.000000, -203.000000)" fill-rule="nonzero" fill="#FFFFFF">
+                    <g transform="translate(-1243.000000, -203.000000)" fill-rule="nonzero" fill="#666666">
                         <g id="close-button" transform="translate(1243.000000, 203.000000)">
                             <polygon id="Shape" points="24 2.4 21.6 0 12 9.6 2.4 0 0 2.4 9.6 12 0 21.6 2.4 24 12 14.4 21.6 24 24 21.6 14.4 12"></polygon>
                         </g>
